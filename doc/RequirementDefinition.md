@@ -94,7 +94,7 @@
 - メモリ不足：軽量モードに自動切替 + 通知
 
 ## 技術要件
-- [doc/TECH_STACK.md](doc/TECH_STACK.md) に記載
+- [doc/TECH_STACK.md](./TECH_STACK.md) に記載
 
 ## 非機能要件
 - 起動時間：2秒以内
@@ -104,7 +104,7 @@
 - レスポンス時間：UI操作からの反応は100ms以内
 
 ## 制約条件
-- [doc/TECH_STACK.md](doc/TECH_STACK.md) に記載
+- [doc/TECH_STACK.md](./TECH_STACK.md) に記載
 - オフライン動作可能
 - ストレージ使用量：最大100MB
 
@@ -123,4 +123,4 @@
 - メモリ使用量の検証
 
 ## 補足資料
-- [doc/TECH_STACK.md](doc/TECH_STACK.md): 技術スタックの詳細
+- [doc/TECH_STACK.md](./TECH_STACK.md): 技術スタックの詳細
