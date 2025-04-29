@@ -3,12 +3,12 @@
 このリストは主な実装タスクを示します。
 
 ## 0. プロジェクト初期設定
-- [ ] `.gitignore` ファイル作成・設定 (Android/Kotlin 用)
-- [ ] Gradle プロジェクトセットアップ
-    - [ ] `:app` モジュール作成
-    - [ ] `:shared` KMP モジュール作成
-    - [ ] ルート `settings.gradle.kts` 設定
-    - [ ] 各モジュール `build.gradle.kts` に基本プラグイン・依存関係追加
+- [x] `.gitignore` ファイル作成・設定 (Android/Kotlin 用)
+- [x] Gradle プロジェクトセットアップ
+    - [x] `:app` モジュール作成
+    - [x] `:shared` KMP モジュール作成
+    - [x] ルート `settings.gradle.kts` 設定
+    - [x] 各モジュール `build.gradle.kts` に基本プラグイン・依存関係追加
 
 ## 1. KMP共有モジュール (`:shared`) の実装
 
