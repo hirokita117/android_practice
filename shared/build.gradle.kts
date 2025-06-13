@@ -1,8 +1,8 @@
 plugins {
     id("org.jetbrains.kotlin.multiplatform") version "2.0.0" // Use your Kotlin version
     id("com.android.library")
-    // id("org.jetbrains.kotlin.plugin.serialization") version "2.0.0" // If using kotlinx.serialization
-    // id("com.google.devtools.ksp") version "2.0.0-1.0.21" // If using KSP
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.0.0" // If using kotlinx.serialization
+    id("com.google.devtools.ksp") version "2.0.0-1.0.22" // If using KSP
 }
 
 kotlin {
@@ -20,8 +20,8 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
-                // implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
-                // implementation("io.insert-koin:koin-core:3.5.6")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
+                implementation("io.insert-koin:koin-core:3.5.6")
             }
         }
         val androidMain by getting {
@@ -30,7 +30,7 @@ kotlin {
                 implementation("androidx.room:room-runtime:2.6.1")
                 implementation("androidx.room:room-ktx:2.6.1")
                 implementation("androidx.datastore:datastore-preferences:1.1.1")
-                // ksp("androidx.room:room-compiler:2.6.1")
+                ksp("androidx.room:room-compiler:2.6.1")
             }
         }
         val iosMain by getting {
@@ -76,7 +76,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     // Required for Room Schemas with KSP
-    // sourceSets["main"].java.srcDirs("src/androidMain/kotlin", "build/generated/ksp/android/debug/kotlin", "build/generated/ksp/android/release/kotlin")
+    sourceSets["main"].java.srcDirs("src/androidMain/kotlin", "build/generated/ksp/android/debug/kotlin", "build/generated/ksp/android/release/kotlin")
 }
 
 // Room schema location (adjust path if using KAPT instead of KSP)
@@ -90,6 +90,6 @@ android {
 //     }
 // }
 // // Or for KSP:
-// ksp {
-//     arg("room.schemaLocation", "$projectDir/schemas")
-// } 
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
+}
