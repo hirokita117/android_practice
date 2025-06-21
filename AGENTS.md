@@ -1,12 +1,15 @@
+# AGENTS — 貢献ガイドライン
+本ファイルは本リポジトリのコミュニケーションおよび貢献ルールをまとめたものです。以下をご確認ください。
+
 # コミュニケーション方針
 
-- 日本語でやりとりしたいです。
+- コミュニケーションは日本語でお願いします。
   - プルリクエストの description も日本語で記載してください。
 
 # プロジェクト概要
 
-- このリポジトリでは、シンプルな日記アプリ「MyDiary」を Android (Jetpack Compose) と Kotlin Multiplatform (KMP) を使用して開発します。
-- 主要な技術スタックは doc/TECH_STACK.md を参照してください。
+- 本リポジトリは、Android (Jetpack Compose) と Kotlin Multiplatform (KMP) で開発されたシンプルな日記アプリ「MyDiary」です。
+- 主要な技術スタックは [doc/TECH_STACK.md](doc/TECH_STACK.md) を参照してください。
 
 # 開発プロセス
 

@@ -9,7 +9,7 @@ early_access: false
 
 # コードレビューに関する設定
 reviews:
-  # レビューの厳しさを設定します (例: "zen", "chill", "normal", "strict", "intense")
+  # レビューの厳しさを設定します (例: "assertive", "chill")
   # "chill" はリラックスしたレビューです
   profile: "chill"
 
@@ -42,10 +42,7 @@ reviews:
     # ロックファイルを除外
     - "!**/*.lock"
     # 画像ファイルを除外
-    - "!**/*.png"
-    - "!**/*.jpg"
-    - "!**/*.jpeg"
-    - "!**/*.gif"
+    - "!**/*.{png,jpg,jpeg,gif}"
     # テスト用のデータなどを除外
     - "!testdata/**"
 
