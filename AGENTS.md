@@ -1,0 +1,4 @@
+- 日本語でやりとりしたいです。
+- このリポジトリでは、シンプルな日記アプリ「MyDiary」を Android (Jetpack Compose) と Kotlin Multiplatform (KMP) を使用して開発します。
+- 修正をおこなう場合は、その修正内容の理由を記したファイルを別途追加するようにしてください。
+- 主要な技術スタックは `doc/TECH_STACK.md` を参照してください。
