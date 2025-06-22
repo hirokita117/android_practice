@@ -1,7 +1,7 @@
 plugins {
-    id("org.jetbrains.kotlin.multiplatform") version "2.0.0" // Use your Kotlin version
+    id("org.jetbrains.kotlin.multiplatform")
     id("com.android.library")
-    id("org.jetbrains.kotlin.plugin.serialization") version "2.0.0" // If using kotlinx.serialization
+    id("org.jetbrains.kotlin.plugin.serialization")
     // id("com.google.devtools.ksp") version "2.0.0-1.0.21" // If using KSP
 }
 
@@ -11,9 +11,6 @@ kotlin {
             kotlinOptions { jvmTarget = "1.8" }
         }
     }
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
 
     sourceSets {
         val commonMain by getting {
@@ -33,16 +30,6 @@ kotlin {
                 // ksp("androidx.room:room-compiler:2.6.1")
             }
         }
-        val iosMain by getting {
-            // Link commonMain to iosMain before defining dependents
-            dependsOn(commonMain)
-            dependencies {
-                // iOS specific dependencies
-            }
-        }
-        val iosX64Main by getting { dependsOn(iosMain) }
-        val iosArm64Main by getting { dependsOn(iosMain) }
-        val iosSimulatorArm64Main by getting { dependsOn(iosMain) }
 
         val commonTest by getting {
             dependencies {
@@ -58,10 +45,6 @@ kotlin {
                  implementation("androidx.room:room-testing:2.6.1")
              }
         }
-        val iosTest by getting { dependsOn(commonTest) }
-        val iosX64Test by getting { dependsOn(iosTest) }
-        val iosArm64Test by getting { dependsOn(iosTest) }
-        val iosSimulatorArm64Test by getting { dependsOn(iosTest) }
     }
 }
 
