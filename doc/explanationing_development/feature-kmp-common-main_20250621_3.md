@@ -1,3 +1,6 @@
+# プルリクエストURL
+- https://github.com/hirokita117/android_practice/pull/3
+
 # KMP共有モジュール(commonMain)の実装解説
 
 今回の開発は、AndroidとiOSのアプリケーションで共通して利用する「共有モジュール」の土台を構築したものです。PHPでの開発経験がある方に分かりやすいように、具体的な内容を解説します。
