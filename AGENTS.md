@@ -14,6 +14,6 @@
 # 開発プロセス
 
 - 修正をおこなう場合は、その修正内容の理由を記したファイルを別途追加するようにしてください。
-  - [doc/changes/](./doc/changes/) 以下に、 `<branch_name>_<YYYYMMDD>.md` というファイルを作成
-  - 例： [doc/changes/feature-kmp-common-main_20250621.md](./doc/changes/feature-kmp-common-main_20250621.md)
+  - [doc/changes/](./doc/changes/) 以下に、 `<branch_name>_<YYYYMMDD>_<pull_request_number>.md` というファイルを作成
+  - 例： [doc/changes/feature-kmp-common-main_20250621_3.md](./doc/changes/feature-kmp-common-main_20250621_3.md)
     - 上記のように、 feature などのブランチ名の prefix の後のスラッシュ（`/`）は、ハイフン（`-`）に変換する。
