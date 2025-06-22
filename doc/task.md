@@ -13,11 +13,11 @@
 ## 1. KMP共有モジュール (`:shared`) の実装
 
 ### 1.1. `commonMain`
-- [ ] データモデル定義 (`DiaryEntry`, `Mood`, `Weather`)
-- [ ] リポジトリインターフェース定義 (`DiaryRepository`)
-- [ ] `kotlinx-datetime` の導入と設定
-- [ ] `kotlinx-serialization` の導入と設定 (必要に応じて)
-- [ ] 共通の UseCase 定義 (必要に応じて)
+- [x] データモデル定義 (`DiaryEntry`, `Mood`, `Weather`)
+- [x] リポジトリインターフェース定義 (`DiaryRepository`)
+- [x] `kotlinx-datetime` の導入と設定
+- [x] `kotlinx-serialization` の導入と設定 (必要に応じて)
+- [x] 共通の UseCase 定義 (必要に応じて)
 
 ### 1.2. `androidMain`
 - [ ] Room データベース定義 (`MyDiaryDatabase`, `DiaryEntryEntity`, `DiaryDao`)
