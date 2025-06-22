@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt") // Or id("com.google.devtools.ksp") depending on annotation processors
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
